@@ -1,0 +1,1752 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title "DC Controller STM32"
+Date "2020-07-04"
+Rev "2"
+Comp ""
+Comment1 "Designed: A Martell"
+Comment2 "Based on designs by J Huebner and D Maguire"
+Comment3 "Openinvertor.org"
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5EFEB0AC
+P 9050 5830
+AR Path="/5EFEB0AC" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5EFEB0AC" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5EFEB0AC" Ref="R23"  Part="1" 
+F 0 "R23" V 9257 5830 50  0000 C CNN
+F 1 "10k" V 9166 5830 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8980 5830 50  0001 C CNN
+F 3 "~" H 9050 5830 50  0001 C CNN
+F 4 "C25804" H 9050 5830 50  0001 C CNN "JLPCB Component"
+	1    9050 5830
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8900 4880 0    50   Input ~ 0
+PA6_TIM3_CH1
+Text GLabel 8900 5830 0    50   Input ~ 0
+PA7_TIM3_CH2
+Wire Wire Line
+	9200 4880 9300 4880
+Wire Wire Line
+	9200 5830 9300 5830
+$Comp
+L Device:C C?
+U 1 1 5EFEB0B7
+P 9300 5130
+AR Path="/5EFEB0B7" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5EFEB0B7" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5EFEB0B7" Ref="C29"  Part="1" 
+F 0 "C29" H 9415 5176 50  0000 L CNN
+F 1 "1uF" H 9415 5085 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9338 4980 50  0001 C CNN
+F 3 "~" H 9300 5130 50  0001 C CNN
+F 4 "C15849" H 9300 5130 50  0001 C CNN "JLPCB Component"
+	1    9300 5130
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EFEB0BE
+P 9300 6080
+AR Path="/5EFEB0BE" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5EFEB0BE" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5EFEB0BE" Ref="C30"  Part="1" 
+F 0 "C30" H 9415 6126 50  0000 L CNN
+F 1 "1uF" H 9415 6035 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9338 5930 50  0001 C CNN
+F 3 "~" H 9300 6080 50  0001 C CNN
+F 4 "C15849" H 9300 6080 50  0001 C CNN "JLPCB Component"
+	1    9300 6080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFEB0C4
+P 9650 6330
+AR Path="/5EFEB0C4" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5EFEB0C4" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5EFEB0C4" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 9650 6080 50  0001 C CNN
+F 1 "GND" H 9500 6280 50  0000 C CNN
+F 2 "" H 9650 6330 50  0001 C CNN
+F 3 "" H 9650 6330 50  0001 C CNN
+	1    9650 6330
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 6230 9300 6280
+Wire Wire Line
+	9300 6280 9650 6280
+Connection ~ 9650 6280
+Wire Wire Line
+	9650 6280 9650 6330
+$Comp
+L power:GND #PWR?
+U 1 1 5EFEB0CE
+P 9650 5380
+AR Path="/5EFEB0CE" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5EFEB0CE" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5EFEB0CE" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 9650 5130 50  0001 C CNN
+F 1 "GND" H 9500 5330 50  0000 C CNN
+F 2 "" H 9650 5380 50  0001 C CNN
+F 3 "" H 9650 5380 50  0001 C CNN
+	1    9650 5380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5080 9650 5330
+Wire Wire Line
+	9300 5280 9300 5330
+Wire Wire Line
+	9300 5330 9650 5330
+Connection ~ 9650 5330
+Wire Wire Line
+	9650 5330 9650 5380
+Wire Wire Line
+	9650 5630 9650 5580
+Wire Wire Line
+	9650 5580 10120 5580
+Wire Wire Line
+	10120 5580 10120 4280
+Wire Wire Line
+	10120 4280 10350 4280
+Wire Wire Line
+	9650 4680 9650 4180
+Wire Wire Line
+	9650 4180 10350 4180
+$Comp
+L Device:R R?
+U 1 1 5EFEB0EC
+P 9050 4880
+AR Path="/5EFEB0EC" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5EFEB0EC" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5EFEB0EC" Ref="R22"  Part="1" 
+F 0 "R22" V 9257 4880 50  0000 C CNN
+F 1 "10k" V 9166 4880 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8980 4880 50  0001 C CNN
+F 3 "~" H 9050 4880 50  0001 C CNN
+F 4 "C25804" H 9050 4880 50  0001 C CNN "JLPCB Component"
+	1    9050 4880
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9300 4980 9300 4880
+Connection ~ 9300 4880
+Wire Wire Line
+	9300 5930 9300 5830
+Connection ~ 9300 5830
+Wire Wire Line
+	9300 5830 9350 5830
+Text GLabel 10350 4180 2    50   Input ~ 0
+A_OUT_1
+Text GLabel 10350 4280 2    50   Input ~ 0
+A_OUT_2
+Text Notes 10350 5400 0    50   ~ 0
+Analogue Outputs
+$Comp
+L Device:Q_NPN_BEC Q?
+U 1 1 5EFEB122
+P 9550 4880
+AR Path="/5EDFAF50/5EFEB122" Ref="Q?"  Part="1" 
+AR Path="/5EFC5179/5EFEB122" Ref="Q3"  Part="1" 
+F 0 "Q3" H 9740 4926 50  0000 L CNN
+F 1 "S8050" H 9740 4835 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9750 4980 50  0001 C CNN
+F 3 "~" H 9550 4880 50  0001 C CNN
+F 4 "C2146" H 9550 4880 50  0001 C CNN "JLPCB Component"
+	1    9550 4880
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q?
+U 1 1 5EFEB129
+P 9550 5830
+AR Path="/5EDFAF50/5EFEB129" Ref="Q?"  Part="1" 
+AR Path="/5EFC5179/5EFEB129" Ref="Q4"  Part="1" 
+F 0 "Q4" H 9740 5876 50  0000 L CNN
+F 1 "S8050" H 9740 5785 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9750 5930 50  0001 C CNN
+F 3 "~" H 9550 5830 50  0001 C CNN
+F 4 "C2146" H 9550 5830 50  0001 C CNN "JLPCB Component"
+	1    9550 5830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4880 9350 4880
+Wire Wire Line
+	9650 6030 9650 6280
+$Comp
+L Device:R R?
+U 1 1 5EFFE0DF
+P 2040 1460
+AR Path="/5EFFE0DF" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5EFFE0DF" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5EFFE0DF" Ref="R16"  Part="1" 
+F 0 "R16" H 1970 1414 50  0000 R CNN
+F 1 "1.5k" H 1970 1505 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1970 1460 50  0001 C CNN
+F 3 "~" H 2040 1460 50  0001 C CNN
+F 4 "C22843" H 2040 1460 50  0001 C CNN "JLPCB Component"
+	1    2040 1460
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFFE0E6
+P 1740 1210
+AR Path="/5EFFE0E6" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5EFFE0E6" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5EFFE0E6" Ref="R13"  Part="1" 
+F 0 "R13" V 1640 1210 50  0000 C CNN
+F 1 "4.7k" V 1540 1210 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1670 1210 50  0001 C CNN
+F 3 "~" H 1740 1210 50  0001 C CNN
+F 4 "C23162" H 1740 1210 50  0001 C CNN "JLPCB Component"
+	1    1740 1210
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EFFE0ED
+P 2440 1460
+AR Path="/5EFFE0ED" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5EFFE0ED" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5EFFE0ED" Ref="C26"  Part="1" 
+F 0 "C26" H 2555 1506 50  0000 L CNN
+F 1 "1uF" H 2555 1415 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2478 1310 50  0001 C CNN
+F 3 "~" H 2440 1460 50  0001 C CNN
+F 4 "C15849" H 2440 1460 50  0001 C CNN "JLPCB Component"
+	1    2440 1460
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFFE0F3
+P 2240 1760
+AR Path="/5EFFE0F3" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5EFFE0F3" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5EFFE0F3" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 2240 1510 50  0001 C CNN
+F 1 "GND" H 2245 1587 50  0000 C CNN
+F 2 "" H 2240 1760 50  0001 C CNN
+F 3 "" H 2240 1760 50  0001 C CNN
+	1    2240 1760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1890 1210 2040 1210
+Wire Wire Line
+	2440 1210 2440 1310
+Wire Wire Line
+	2040 1310 2040 1210
+Connection ~ 2040 1210
+Wire Wire Line
+	2040 1210 2440 1210
+Wire Wire Line
+	2040 1610 2040 1660
+Wire Wire Line
+	2040 1660 2240 1660
+Wire Wire Line
+	2440 1660 2440 1610
+Wire Wire Line
+	2240 1760 2240 1660
+Connection ~ 2240 1660
+Wire Wire Line
+	2240 1660 2440 1660
+Text GLabel 2590 1210 2    50   Input ~ 0
+PA4_Ignition
+Wire Wire Line
+	2590 1210 2440 1210
+Connection ~ 2440 1210
+Text Notes 1170 980  0    50   ~ 0
+12V Digital Inputs
+$Comp
+L Device:Q_NMOS_GDSD Q5
+U 1 1 5F752AE7
+P 2090 4990
+F 0 "Q5" H 2378 5036 50  0000 L CNN
+F 1 "NCV8402A" H 2378 4945 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2290 5090 50  0001 C CNN
+F 3 "~" H 2090 4990 50  0001 C CNN
+F 4 "C77755" H 2090 4990 50  0001 C CNN "JLPCB Component"
+F 5 "e" H 2090 4990 50  0001 C CNN "JLPCB Extended"
+	1    2090 4990
+	1    0    0    -1  
+$EndComp
+Text GLabel 1710 4990 0    50   Input ~ 0
+PA8_Main_Con_1
+Wire Wire Line
+	1710 4990 1890 4990
+$Comp
+L power:GND #PWR?
+U 1 1 5F75CBE1
+P 2190 5290
+AR Path="/5F75CBE1" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F75CBE1" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F75CBE1" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 2190 5040 50  0001 C CNN
+F 1 "GND" H 2195 5117 50  0000 C CNN
+F 2 "" H 2190 5290 50  0001 C CNN
+F 3 "" H 2190 5290 50  0001 C CNN
+	1    2190 5290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2190 5290 2190 5190
+Text GLabel 1680 4680 0    50   Input ~ 0
+Main_Con_1
+Wire Wire Line
+	1680 4680 2190 4680
+Wire Wire Line
+	2290 4680 2290 4790
+Wire Wire Line
+	2190 4790 2190 4680
+Connection ~ 2190 4680
+Wire Wire Line
+	2190 4680 2290 4680
+$Comp
+L Device:Q_NMOS_GDSD Q1
+U 1 1 5F7603F7
+P 2080 5920
+F 0 "Q1" H 2368 5966 50  0000 L CNN
+F 1 "NCV8402A" H 2368 5875 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2280 6020 50  0001 C CNN
+F 3 "~" H 2080 5920 50  0001 C CNN
+F 4 "C77755" H 2080 5920 50  0001 C CNN "JLPCB Component"
+F 5 "e" H 2080 5920 50  0001 C CNN "JLPCB Extended"
+	1    2080 5920
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 5920 0    50   Input ~ 0
+PB2_Pre_Chg_Rly
+Wire Wire Line
+	1700 5920 1880 5920
+$Comp
+L power:GND #PWR?
+U 1 1 5F760403
+P 2180 6220
+AR Path="/5F760403" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F760403" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F760403" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 2180 5970 50  0001 C CNN
+F 1 "GND" H 2185 6047 50  0000 C CNN
+F 2 "" H 2180 6220 50  0001 C CNN
+F 3 "" H 2180 6220 50  0001 C CNN
+	1    2180 6220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2180 6220 2180 6120
+Text GLabel 1670 5610 0    50   Input ~ 0
+Pre_Chg_Rly
+Wire Wire Line
+	1670 5610 2180 5610
+Wire Wire Line
+	2280 5610 2280 5720
+Wire Wire Line
+	2180 5720 2180 5610
+Connection ~ 2180 5610
+Wire Wire Line
+	2180 5610 2280 5610
+$Comp
+L Device:Q_NMOS_GDSD Q8
+U 1 1 5F761C51
+P 4210 5020
+F 0 "Q8" H 4498 5066 50  0000 L CNN
+F 1 "NCV8402A" H 4498 4975 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 4410 5120 50  0001 C CNN
+F 3 "~" H 4210 5020 50  0001 C CNN
+F 4 "C77755" H 4210 5020 50  0001 C CNN "JLPCB Component"
+F 5 "e" H 4210 5020 50  0001 C CNN "JLPCB Extended"
+	1    4210 5020
+	1    0    0    -1  
+$EndComp
+Text GLabel 3830 5020 0    50   Input ~ 0
+PB7_Aux_Supply_Cont
+Wire Wire Line
+	3830 5020 4010 5020
+$Comp
+L power:GND #PWR?
+U 1 1 5F761C5D
+P 4310 5320
+AR Path="/5F761C5D" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F761C5D" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F761C5D" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 4310 5070 50  0001 C CNN
+F 1 "GND" H 4315 5147 50  0000 C CNN
+F 2 "" H 4310 5320 50  0001 C CNN
+F 3 "" H 4310 5320 50  0001 C CNN
+	1    4310 5320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4310 5320 4310 5220
+Text GLabel 3800 4710 0    50   Input ~ 0
+Aux_Supply
+Wire Wire Line
+	3800 4710 4310 4710
+Wire Wire Line
+	4410 4710 4410 4820
+Wire Wire Line
+	4310 4820 4310 4710
+Connection ~ 4310 4710
+Wire Wire Line
+	4310 4710 4410 4710
+$Comp
+L Device:Q_NMOS_GDSD Q7
+U 1 1 5F761C70
+P 4200 5950
+F 0 "Q7" H 4488 5996 50  0000 L CNN
+F 1 "NCV8402A" H 4488 5905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 4400 6050 50  0001 C CNN
+F 3 "~" H 4200 5950 50  0001 C CNN
+F 4 "C77755" H 4200 5950 50  0001 C CNN "JLPCB Component"
+F 5 "e" H 4200 5950 50  0001 C CNN "JLPCB Extended"
+	1    4200 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3820 5950 4000 5950
+$Comp
+L power:GND #PWR?
+U 1 1 5F761C7C
+P 4300 6250
+AR Path="/5F761C7C" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F761C7C" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F761C7C" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 4300 6000 50  0001 C CNN
+F 1 "GND" H 4305 6077 50  0000 C CNN
+F 2 "" H 4300 6250 50  0001 C CNN
+F 3 "" H 4300 6250 50  0001 C CNN
+	1    4300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6250 4300 6150
+Wire Wire Line
+	3790 5640 4300 5640
+Wire Wire Line
+	4400 5640 4400 5750
+Wire Wire Line
+	4300 5750 4300 5640
+Connection ~ 4300 5640
+Wire Wire Line
+	4300 5640 4400 5640
+$Comp
+L Device:Q_NMOS_GDSD Q6
+U 1 1 5F764C50
+P 2090 6940
+F 0 "Q6" H 2378 6986 50  0000 L CNN
+F 1 "NCV8402A" H 2378 6895 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2290 7040 50  0001 C CNN
+F 3 "~" H 2090 6940 50  0001 C CNN
+F 4 "C77755" H 2090 6940 50  0001 C CNN "JLPCB Component"
+F 5 "e" H 2090 6940 50  0001 C CNN "JLPCB Extended"
+	1    2090 6940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1710 6940 1890 6940
+$Comp
+L power:GND #PWR?
+U 1 1 5F764C5C
+P 2190 7240
+AR Path="/5F764C5C" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F764C5C" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F764C5C" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 2190 6990 50  0001 C CNN
+F 1 "GND" H 2195 7067 50  0000 C CNN
+F 2 "" H 2190 7240 50  0001 C CNN
+F 3 "" H 2190 7240 50  0001 C CNN
+	1    2190 7240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2190 7240 2190 7140
+Wire Wire Line
+	1680 6630 2190 6630
+Wire Wire Line
+	2290 6630 2290 6740
+Wire Wire Line
+	2190 6740 2190 6630
+Connection ~ 2190 6630
+Wire Wire Line
+	2190 6630 2290 6630
+$Comp
+L Device:Q_NMOS_GDSD Q9
+U 1 1 5F764C6F
+P 4210 6950
+F 0 "Q9" H 4498 6996 50  0000 L CNN
+F 1 "NCV8402A" H 4498 6905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 4410 7050 50  0001 C CNN
+F 3 "~" H 4210 6950 50  0001 C CNN
+F 4 "C77755" H 4210 6950 50  0001 C CNN "JLPCB Component"
+F 5 "e" H 4210 6950 50  0001 C CNN "JLPCB Extended"
+	1    4210 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3830 6950 4010 6950
+$Comp
+L power:GND #PWR?
+U 1 1 5F764C7B
+P 4310 7250
+AR Path="/5F764C7B" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F764C7B" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F764C7B" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 4310 7000 50  0001 C CNN
+F 1 "GND" H 4315 7077 50  0000 C CNN
+F 2 "" H 4310 7250 50  0001 C CNN
+F 3 "" H 4310 7250 50  0001 C CNN
+	1    4310 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4310 7250 4310 7150
+Wire Wire Line
+	3800 6640 4310 6640
+Wire Wire Line
+	4410 6640 4410 6750
+Wire Wire Line
+	4310 6750 4310 6640
+Connection ~ 4310 6640
+Wire Wire Line
+	4310 6640 4410 6640
+Text Notes 2930 7600 0    50   ~ 0
+Digital Outputs
+Text GLabel 1290 1210 0    50   Input ~ 0
+Ignition
+Wire Wire Line
+	1290 1210 1590 1210
+Text Notes 820  810  0    197  ~ 0
+Check Resistor Values
+$Comp
+L Device:R R?
+U 1 1 5F772A64
+P 2040 2390
+AR Path="/5F772A64" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F772A64" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F772A64" Ref="R10"  Part="1" 
+F 0 "R10" H 1970 2344 50  0000 R CNN
+F 1 "1.5k" H 1970 2435 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1970 2390 50  0001 C CNN
+F 3 "~" H 2040 2390 50  0001 C CNN
+F 4 "C22843" H 2040 2390 50  0001 C CNN "JLPCB Component"
+	1    2040 2390
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F772A6F
+P 1740 2140
+AR Path="/5F772A6F" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F772A6F" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F772A6F" Ref="R3"  Part="1" 
+F 0 "R3" V 1640 2140 50  0000 C CNN
+F 1 "4.7k" V 1540 2140 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1670 2140 50  0001 C CNN
+F 3 "~" H 1740 2140 50  0001 C CNN
+F 4 "C23162" H 1740 2140 50  0001 C CNN "JLPCB Component"
+	1    1740 2140
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F772A7A
+P 2440 2390
+AR Path="/5F772A7A" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F772A7A" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F772A7A" Ref="C1"  Part="1" 
+F 0 "C1" H 2555 2436 50  0000 L CNN
+F 1 "1uF" H 2555 2345 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2478 2240 50  0001 C CNN
+F 3 "~" H 2440 2390 50  0001 C CNN
+F 4 "C15849" H 2440 2390 50  0001 C CNN "JLPCB Component"
+	1    2440 2390
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F772A84
+P 2240 2690
+AR Path="/5F772A84" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F772A84" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F772A84" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2240 2440 50  0001 C CNN
+F 1 "GND" H 2245 2517 50  0000 C CNN
+F 2 "" H 2240 2690 50  0001 C CNN
+F 3 "" H 2240 2690 50  0001 C CNN
+	1    2240 2690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1890 2140 2040 2140
+Wire Wire Line
+	2440 2140 2440 2240
+Wire Wire Line
+	2040 2240 2040 2140
+Connection ~ 2040 2140
+Wire Wire Line
+	2040 2140 2440 2140
+Wire Wire Line
+	2040 2540 2040 2590
+Wire Wire Line
+	2040 2590 2240 2590
+Wire Wire Line
+	2440 2590 2440 2540
+Wire Wire Line
+	2240 2690 2240 2590
+Connection ~ 2240 2590
+Wire Wire Line
+	2240 2590 2440 2590
+Text GLabel 2590 2140 2    50   Input ~ 0
+PA10_Brake_On_2
+Wire Wire Line
+	2590 2140 2440 2140
+Connection ~ 2440 2140
+Text GLabel 1290 2140 0    50   Input ~ 0
+Brake_On_2
+Wire Wire Line
+	1290 2140 1590 2140
+$Comp
+L Device:R R?
+U 1 1 5F7AC505
+P 2040 3290
+AR Path="/5F7AC505" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7AC505" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7AC505" Ref="R11"  Part="1" 
+F 0 "R11" H 1970 3244 50  0000 R CNN
+F 1 "1.5k" H 1970 3335 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1970 3290 50  0001 C CNN
+F 3 "~" H 2040 3290 50  0001 C CNN
+F 4 "C22843" H 2040 3290 50  0001 C CNN "JLPCB Component"
+	1    2040 3290
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7AC510
+P 1740 3040
+AR Path="/5F7AC510" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7AC510" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7AC510" Ref="R4"  Part="1" 
+F 0 "R4" V 1640 3040 50  0000 C CNN
+F 1 "4.7k" V 1540 3040 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1670 3040 50  0001 C CNN
+F 3 "~" H 1740 3040 50  0001 C CNN
+F 4 "C23162" H 1740 3040 50  0001 C CNN "JLPCB Component"
+	1    1740 3040
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F7AC51B
+P 2440 3290
+AR Path="/5F7AC51B" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F7AC51B" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F7AC51B" Ref="C2"  Part="1" 
+F 0 "C2" H 2555 3336 50  0000 L CNN
+F 1 "1uF" H 2555 3245 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2478 3140 50  0001 C CNN
+F 3 "~" H 2440 3290 50  0001 C CNN
+F 4 "C15849" H 2440 3290 50  0001 C CNN "JLPCB Component"
+	1    2440 3290
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7AC525
+P 2240 3590
+AR Path="/5F7AC525" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F7AC525" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7AC525" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 2240 3340 50  0001 C CNN
+F 1 "GND" H 2245 3417 50  0000 C CNN
+F 2 "" H 2240 3590 50  0001 C CNN
+F 3 "" H 2240 3590 50  0001 C CNN
+	1    2240 3590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1890 3040 2040 3040
+Wire Wire Line
+	2440 3040 2440 3140
+Wire Wire Line
+	2040 3140 2040 3040
+Connection ~ 2040 3040
+Wire Wire Line
+	2040 3040 2440 3040
+Wire Wire Line
+	2040 3440 2040 3490
+Wire Wire Line
+	2040 3490 2240 3490
+Wire Wire Line
+	2440 3490 2440 3440
+Wire Wire Line
+	2240 3590 2240 3490
+Connection ~ 2240 3490
+Wire Wire Line
+	2240 3490 2440 3490
+Text GLabel 2590 3040 2    50   Input ~ 0
+PA5_Clutch_In
+Wire Wire Line
+	2590 3040 2440 3040
+Connection ~ 2440 3040
+Text GLabel 1290 3040 0    50   Input ~ 0
+Clutch_In
+Wire Wire Line
+	1290 3040 1590 3040
+$Comp
+L Device:R R?
+U 1 1 5F7AFC60
+P 4930 1470
+AR Path="/5F7AFC60" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7AFC60" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7AFC60" Ref="R20"  Part="1" 
+F 0 "R20" H 4860 1424 50  0000 R CNN
+F 1 "NF" H 4860 1515 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4860 1470 50  0001 C CNN
+F 3 "~" H 4930 1470 50  0001 C CNN
+F 4 "" H 4930 1470 50  0001 C CNN "JLPCB Component"
+	1    4930 1470
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7AFC6B
+P 4630 1220
+AR Path="/5F7AFC6B" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7AFC6B" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7AFC6B" Ref="R15"  Part="1" 
+F 0 "R15" V 4530 1220 50  0000 C CNN
+F 1 "0R" V 4430 1220 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4560 1220 50  0001 C CNN
+F 3 "~" H 4630 1220 50  0001 C CNN
+F 4 "C21189" H 4630 1220 50  0001 C CNN "JLPCB Component"
+	1    4630 1220
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F7AFC76
+P 5330 1470
+AR Path="/5F7AFC76" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F7AFC76" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F7AFC76" Ref="C5"  Part="1" 
+F 0 "C5" H 5445 1516 50  0000 L CNN
+F 1 "1uF" H 5445 1425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5368 1320 50  0001 C CNN
+F 3 "~" H 5330 1470 50  0001 C CNN
+F 4 "C15849" H 5330 1470 50  0001 C CNN "JLPCB Component"
+	1    5330 1470
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7AFC80
+P 5130 1770
+AR Path="/5F7AFC80" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F7AFC80" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7AFC80" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 5130 1520 50  0001 C CNN
+F 1 "GND" H 5135 1597 50  0000 C CNN
+F 2 "" H 5130 1770 50  0001 C CNN
+F 3 "" H 5130 1770 50  0001 C CNN
+	1    5130 1770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4780 1220 4930 1220
+Wire Wire Line
+	5330 1220 5330 1320
+Wire Wire Line
+	4930 1320 4930 1220
+Connection ~ 4930 1220
+Wire Wire Line
+	4930 1620 4930 1670
+Wire Wire Line
+	4930 1670 5130 1670
+Wire Wire Line
+	5330 1670 5330 1620
+Wire Wire Line
+	5130 1770 5130 1670
+Connection ~ 5130 1670
+Wire Wire Line
+	5130 1670 5330 1670
+Text GLabel 5480 1220 2    50   Input ~ 0
+PB0_Motor_RPM
+Wire Wire Line
+	5480 1220 5330 1220
+Connection ~ 5330 1220
+Text GLabel 4180 1220 0    50   Input ~ 0
+Motor_RPM+
+Wire Wire Line
+	4180 1220 4480 1220
+$Comp
+L Device:R R?
+U 1 1 5F7B7E51
+P 5090 940
+AR Path="/5F7B7E51" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7B7E51" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7B7E51" Ref="R30"  Part="1" 
+F 0 "R30" H 5020 894 50  0000 R CNN
+F 1 "1.5k" H 5020 985 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5020 940 50  0001 C CNN
+F 3 "~" H 5090 940 50  0001 C CNN
+F 4 "C22843" H 5090 940 50  0001 C CNN "JLPCB Component"
+	1    5090 940 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5090 1090 5090 1220
+Wire Wire Line
+	4930 1220 5090 1220
+Connection ~ 5090 1220
+Wire Wire Line
+	5090 1220 5330 1220
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F7C5F37
+P 5090 730
+AR Path="/5F7C5F37" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7C5F37" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 5090 580 50  0001 C CNN
+F 1 "+3V3" H 5105 903 50  0000 C CNN
+F 2 "" H 5090 730 50  0001 C CNN
+F 3 "" H 5090 730 50  0001 C CNN
+	1    5090 730 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5090 730  5090 790 
+$Comp
+L Device:R R?
+U 1 1 5F7CC743
+P 4910 2380
+AR Path="/5F7CC743" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7CC743" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7CC743" Ref="R19"  Part="1" 
+F 0 "R19" H 4840 2334 50  0000 R CNN
+F 1 "1.5k" H 4840 2425 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4840 2380 50  0001 C CNN
+F 3 "~" H 4910 2380 50  0001 C CNN
+F 4 "C22843" H 4910 2380 50  0001 C CNN "JLPCB Component"
+	1    4910 2380
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7CC74E
+P 4610 2130
+AR Path="/5F7CC74E" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7CC74E" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7CC74E" Ref="R14"  Part="1" 
+F 0 "R14" V 4510 2130 50  0000 C CNN
+F 1 "4.7k" V 4410 2130 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4540 2130 50  0001 C CNN
+F 3 "~" H 4610 2130 50  0001 C CNN
+F 4 "C23162" H 4610 2130 50  0001 C CNN "JLPCB Component"
+	1    4610 2130
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F7CC759
+P 5310 2380
+AR Path="/5F7CC759" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F7CC759" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F7CC759" Ref="C4"  Part="1" 
+F 0 "C4" H 5425 2426 50  0000 L CNN
+F 1 "1uF" H 5425 2335 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5348 2230 50  0001 C CNN
+F 3 "~" H 5310 2380 50  0001 C CNN
+F 4 "C15849" H 5310 2380 50  0001 C CNN "JLPCB Component"
+	1    5310 2380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7CC763
+P 5110 2680
+AR Path="/5F7CC763" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F7CC763" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7CC763" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 5110 2430 50  0001 C CNN
+F 1 "GND" H 5115 2507 50  0000 C CNN
+F 2 "" H 5110 2680 50  0001 C CNN
+F 3 "" H 5110 2680 50  0001 C CNN
+	1    5110 2680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4760 2130 4910 2130
+Wire Wire Line
+	5310 2130 5310 2230
+Wire Wire Line
+	4910 2230 4910 2130
+Connection ~ 4910 2130
+Wire Wire Line
+	4910 2130 5310 2130
+Wire Wire Line
+	4910 2530 4910 2580
+Wire Wire Line
+	4910 2580 5110 2580
+Wire Wire Line
+	5310 2580 5310 2530
+Wire Wire Line
+	5110 2680 5110 2580
+Connection ~ 5110 2580
+Wire Wire Line
+	5110 2580 5310 2580
+Wire Wire Line
+	5460 2130 5310 2130
+Connection ~ 5310 2130
+Text GLabel 4160 2130 0    50   Input ~ 0
+GP_In_1
+Wire Wire Line
+	4160 2130 4460 2130
+$Comp
+L Device:R R?
+U 1 1 5F7D8CCD
+P 7610 1140
+AR Path="/5F7D8CCD" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7D8CCD" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7D8CCD" Ref="R38"  Part="1" 
+F 0 "R38" H 7540 1094 50  0000 R CNN
+F 1 "10k" H 7540 1185 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7540 1140 50  0001 C CNN
+F 3 "~" H 7610 1140 50  0001 C CNN
+F 4 "C25804" H 7610 1140 50  0001 C CNN "JLPCB Component"
+	1    7610 1140
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7D8CD8
+P 7310 890
+AR Path="/5F7D8CD8" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7D8CD8" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7D8CD8" Ref="R34"  Part="1" 
+F 0 "R34" V 7210 890 50  0000 C CNN
+F 1 "3.3k" V 7110 890 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7240 890 50  0001 C CNN
+F 3 "~" H 7310 890 50  0001 C CNN
+F 4 "C22978" H 7310 890 50  0001 C CNN "JLPCB Component"
+	1    7310 890 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F7D8CE3
+P 8010 1140
+AR Path="/5F7D8CE3" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F7D8CE3" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F7D8CE3" Ref="C9"  Part="1" 
+F 0 "C9" H 8125 1186 50  0000 L CNN
+F 1 "1nF" H 8125 1095 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8048 990 50  0001 C CNN
+F 3 "~" H 8010 1140 50  0001 C CNN
+F 4 " C1588" H 8010 1140 50  0001 C CNN "JLPCB Component"
+	1    8010 1140
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7D8CED
+P 7810 1440
+AR Path="/5F7D8CED" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F7D8CED" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7D8CED" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 7810 1190 50  0001 C CNN
+F 1 "GND" H 7815 1267 50  0000 C CNN
+F 2 "" H 7810 1440 50  0001 C CNN
+F 3 "" H 7810 1440 50  0001 C CNN
+	1    7810 1440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7460 890  7610 890 
+Wire Wire Line
+	8010 890  8010 990 
+Wire Wire Line
+	7610 990  7610 890 
+Connection ~ 7610 890 
+Wire Wire Line
+	7610 890  8010 890 
+Wire Wire Line
+	7610 1290 7610 1340
+Wire Wire Line
+	7610 1340 7810 1340
+Wire Wire Line
+	8010 1340 8010 1290
+Wire Wire Line
+	7810 1440 7810 1340
+Connection ~ 7810 1340
+Wire Wire Line
+	7810 1340 8010 1340
+Text GLabel 8160 890  2    50   Input ~ 0
+MG1_UDC_11
+Wire Wire Line
+	8160 890  8010 890 
+Connection ~ 8010 890 
+Text GLabel 6860 890  0    50   Input ~ 0
+DC_Bus_1
+Wire Wire Line
+	6860 890  7160 890 
+$Comp
+L Device:R R?
+U 1 1 5F7DF549
+P 7650 1980
+AR Path="/5F7DF549" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7DF549" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7DF549" Ref="R39"  Part="1" 
+F 0 "R39" H 7580 1934 50  0000 R CNN
+F 1 "10k" H 7580 2025 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7580 1980 50  0001 C CNN
+F 3 "~" H 7650 1980 50  0001 C CNN
+F 4 "C25804" H 7650 1980 50  0001 C CNN "JLPCB Component"
+	1    7650 1980
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7DF554
+P 7350 1730
+AR Path="/5F7DF554" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7DF554" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7DF554" Ref="R36"  Part="1" 
+F 0 "R36" V 7250 1730 50  0000 C CNN
+F 1 "3.3k" V 7150 1730 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7280 1730 50  0001 C CNN
+F 3 "~" H 7350 1730 50  0001 C CNN
+F 4 "C22978" H 7350 1730 50  0001 C CNN "JLPCB Component"
+	1    7350 1730
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F7DF55F
+P 8050 1980
+AR Path="/5F7DF55F" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F7DF55F" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F7DF55F" Ref="C14"  Part="1" 
+F 0 "C14" H 8165 2026 50  0000 L CNN
+F 1 "1nF" H 8165 1935 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8088 1830 50  0001 C CNN
+F 3 "~" H 8050 1980 50  0001 C CNN
+F 4 " C1588" H 8050 1980 50  0001 C CNN "JLPCB Component"
+	1    8050 1980
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7DF569
+P 7850 2280
+AR Path="/5F7DF569" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F7DF569" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7DF569" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 7850 2030 50  0001 C CNN
+F 1 "GND" H 7855 2107 50  0000 C CNN
+F 2 "" H 7850 2280 50  0001 C CNN
+F 3 "" H 7850 2280 50  0001 C CNN
+	1    7850 2280
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1730 7650 1730
+Wire Wire Line
+	8050 1730 8050 1830
+Wire Wire Line
+	7650 1830 7650 1730
+Connection ~ 7650 1730
+Wire Wire Line
+	7650 1730 8050 1730
+Wire Wire Line
+	7650 2130 7650 2180
+Wire Wire Line
+	7650 2180 7850 2180
+Wire Wire Line
+	8050 2180 8050 2130
+Wire Wire Line
+	7850 2280 7850 2180
+Connection ~ 7850 2180
+Wire Wire Line
+	7850 2180 8050 2180
+Text GLabel 8200 1730 2    50   Input ~ 0
+MG2_UDC_11
+Wire Wire Line
+	8200 1730 8050 1730
+Connection ~ 8050 1730
+Text GLabel 6900 1730 0    50   Input ~ 0
+DC_Bus_2
+Wire Wire Line
+	6900 1730 7200 1730
+$Comp
+L Device:R R?
+U 1 1 5F7ECA34
+P 7680 2920
+AR Path="/5F7ECA34" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7ECA34" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7ECA34" Ref="R40"  Part="1" 
+F 0 "R40" H 7610 2874 50  0000 R CNN
+F 1 "2.2k" H 7610 2965 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7610 2920 50  0001 C CNN
+F 3 "~" H 7680 2920 50  0001 C CNN
+F 4 "C4190" H 7680 2920 50  0001 C CNN "JLPCB Component"
+	1    7680 2920
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7ECA3F
+P 7380 2670
+AR Path="/5F7ECA3F" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7ECA3F" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7ECA3F" Ref="R37"  Part="1" 
+F 0 "R37" V 7280 2670 50  0000 C CNN
+F 1 "1.2k" V 7180 2670 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7310 2670 50  0001 C CNN
+F 3 "~" H 7380 2670 50  0001 C CNN
+F 4 "C22765" H 7380 2670 50  0001 C CNN "JLPCB Component"
+	1    7380 2670
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F7ECA4A
+P 8080 2920
+AR Path="/5F7ECA4A" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F7ECA4A" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F7ECA4A" Ref="C20"  Part="1" 
+F 0 "C20" H 8195 2966 50  0000 L CNN
+F 1 "1nF" H 8195 2875 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8118 2770 50  0001 C CNN
+F 3 "~" H 8080 2920 50  0001 C CNN
+F 4 " C1588" H 8080 2920 50  0001 C CNN "JLPCB Component"
+	1    8080 2920
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7ECA54
+P 7880 3220
+AR Path="/5F7ECA54" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F7ECA54" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7ECA54" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 7880 2970 50  0001 C CNN
+F 1 "GND" H 7885 3047 50  0000 C CNN
+F 2 "" H 7880 3220 50  0001 C CNN
+F 3 "" H 7880 3220 50  0001 C CNN
+	1    7880 3220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7530 2670 7680 2670
+Wire Wire Line
+	8080 2670 8080 2770
+Wire Wire Line
+	7680 2770 7680 2670
+Connection ~ 7680 2670
+Wire Wire Line
+	7680 2670 8080 2670
+Wire Wire Line
+	7680 3070 7680 3120
+Wire Wire Line
+	7680 3120 7880 3120
+Wire Wire Line
+	8080 3120 8080 3070
+Wire Wire Line
+	7880 3220 7880 3120
+Wire Wire Line
+	7880 3120 8080 3120
+Text GLabel 8230 2670 2    50   Input ~ 0
+PA2_MG2_Temp
+Wire Wire Line
+	8230 2670 8080 2670
+Connection ~ 8080 2670
+Text GLabel 6930 2670 0    50   Input ~ 0
+MG2_Temp
+Wire Wire Line
+	6930 2670 7230 2670
+$Comp
+L Device:R R?
+U 1 1 5F7F4111
+P 9120 1590
+AR Path="/5F7F4111" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7F4111" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7F4111" Ref="R42"  Part="1" 
+F 0 "R42" H 9050 1544 50  0000 R CNN
+F 1 "1k" H 9050 1635 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9050 1590 50  0001 C CNN
+F 3 "~" H 9120 1590 50  0001 C CNN
+F 4 "C21190" H 9120 1590 50  0001 C CNN "JLPCB Component"
+	1    9120 1590
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7F411C
+P 9480 1330
+AR Path="/5F7F411C" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F7F411C" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F7F411C" Ref="R43"  Part="1" 
+F 0 "R43" V 9380 1330 50  0000 C CNN
+F 1 "10k" V 9280 1330 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9410 1330 50  0001 C CNN
+F 3 "~" H 9480 1330 50  0001 C CNN
+F 4 "C25804" H 9480 1330 50  0001 C CNN "JLPCB Component"
+	1    9480 1330
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F7F4127
+P 10180 1580
+AR Path="/5F7F4127" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F7F4127" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F7F4127" Ref="C21"  Part="1" 
+F 0 "C21" H 10295 1626 50  0000 L CNN
+F 1 "1uF" H 10295 1535 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10218 1430 50  0001 C CNN
+F 3 "~" H 10180 1580 50  0001 C CNN
+F 4 "C15849" H 10180 1580 50  0001 C CNN "JLPCB Component"
+	1    10180 1580
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7F4131
+P 9980 1880
+AR Path="/5F7F4131" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F7F4131" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F7F4131" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 9980 1630 50  0001 C CNN
+F 1 "GND" H 9985 1707 50  0000 C CNN
+F 2 "" H 9980 1880 50  0001 C CNN
+F 3 "" H 9980 1880 50  0001 C CNN
+	1    9980 1880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10180 1330 10180 1430
+Wire Wire Line
+	10180 1780 10180 1730
+Wire Wire Line
+	9980 1880 9980 1780
+Connection ~ 9980 1780
+Wire Wire Line
+	9980 1780 10180 1780
+Text GLabel 9030 1330 0    50   Input ~ 0
+Coolant_Temp
+Wire Wire Line
+	10330 1330 10180 1330
+Connection ~ 10180 1330
+Text GLabel 10330 1330 2    50   Input ~ 0
+PA3_Coolant_Temp
+Wire Wire Line
+	9030 1330 9120 1330
+Wire Wire Line
+	9630 1330 10180 1330
+Wire Wire Line
+	9120 1780 9120 1740
+Wire Wire Line
+	9120 1780 9980 1780
+Wire Wire Line
+	9120 1440 9120 1330
+Connection ~ 9120 1330
+Wire Wire Line
+	9120 1330 9330 1330
+$Comp
+L Device:R R?
+U 1 1 5F823E12
+P 7320 3950
+AR Path="/5F823E12" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F823E12" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F823E12" Ref="R35"  Part="1" 
+F 0 "R35" H 7250 3904 50  0000 R CNN
+F 1 "10k" H 7250 3995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7250 3950 50  0001 C CNN
+F 3 "~" H 7320 3950 50  0001 C CNN
+F 4 "C25804" H 7320 3950 50  0001 C CNN "JLPCB Component"
+	1    7320 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F823E1D
+P 7680 3690
+AR Path="/5F823E1D" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F823E1D" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F823E1D" Ref="R41"  Part="1" 
+F 0 "R41" V 7580 3690 50  0000 C CNN
+F 1 "10k" V 7480 3690 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7610 3690 50  0001 C CNN
+F 3 "~" H 7680 3690 50  0001 C CNN
+F 4 "C25804" H 7680 3690 50  0001 C CNN "JLPCB Component"
+	1    7680 3690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F823E28
+P 8040 3940
+AR Path="/5F823E28" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F823E28" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F823E28" Ref="C10"  Part="1" 
+F 0 "C10" H 8155 3986 50  0000 L CNN
+F 1 "1uF" H 8155 3895 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8078 3790 50  0001 C CNN
+F 3 "~" H 8040 3940 50  0001 C CNN
+F 4 "C15849" H 8040 3940 50  0001 C CNN "JLPCB Component"
+	1    8040 3940
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F823E32
+P 7840 4240
+AR Path="/5F823E32" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F823E32" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F823E32" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 7840 3990 50  0001 C CNN
+F 1 "GND" H 7845 4067 50  0000 C CNN
+F 2 "" H 7840 4240 50  0001 C CNN
+F 3 "" H 7840 4240 50  0001 C CNN
+	1    7840 4240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8040 3690 8040 3790
+Wire Wire Line
+	8040 4140 8040 4090
+Wire Wire Line
+	7840 4240 7840 4140
+Connection ~ 7840 4140
+Wire Wire Line
+	7840 4140 8040 4140
+Text GLabel 8190 3690 2    50   Input ~ 0
+PA1_Accel_2
+Wire Wire Line
+	8190 3690 8040 3690
+Connection ~ 8040 3690
+Text GLabel 6690 3690 0    50   Input ~ 0
+Accel_2
+Wire Wire Line
+	7230 3690 7320 3690
+Wire Wire Line
+	7830 3690 8040 3690
+Wire Wire Line
+	7320 4140 7320 4100
+Wire Wire Line
+	7320 4140 7840 4140
+Wire Wire Line
+	7320 3800 7320 3690
+Connection ~ 7320 3690
+Wire Wire Line
+	7320 3690 7530 3690
+$Comp
+L Device:R R?
+U 1 1 5F836791
+P 7080 3690
+AR Path="/5F836791" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F836791" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F836791" Ref="R33"  Part="1" 
+F 0 "R33" V 6980 3690 50  0000 C CNN
+F 1 "5.1k" V 6880 3690 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7010 3690 50  0001 C CNN
+F 3 "~" H 7080 3690 50  0001 C CNN
+F 4 "C23186" H 7080 3690 50  0001 C CNN "JLPCB Component"
+	1    7080 3690
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6690 3690 6930 3690
+Connection ~ 7880 3120
+$Comp
+L Device:R R?
+U 1 1 5F848A55
+P 9690 2720
+AR Path="/5F848A55" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F848A55" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F848A55" Ref="R31"  Part="1" 
+F 0 "R31" H 9620 2674 50  0000 R CNN
+F 1 "3.9k" H 9620 2765 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9620 2720 50  0001 C CNN
+F 3 "~" H 9690 2720 50  0001 C CNN
+F 4 "C23018" H 9690 2720 50  0001 C CNN "JLPCB Component"
+	1    9690 2720
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F848A60
+P 9930 2960
+AR Path="/5F848A60" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F848A60" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F848A60" Ref="R32"  Part="1" 
+F 0 "R32" V 9830 2960 50  0000 C CNN
+F 1 "10k" V 9730 2960 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9860 2960 50  0001 C CNN
+F 3 "~" H 9930 2960 50  0001 C CNN
+F 4 "C25804" H 9930 2960 50  0001 C CNN "JLPCB Component"
+	1    9930 2960
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F848A6B
+P 10290 3210
+AR Path="/5F848A6B" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F848A6B" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F848A6B" Ref="C8"  Part="1" 
+F 0 "C8" H 10405 3256 50  0000 L CNN
+F 1 "100nF" H 10405 3165 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10328 3060 50  0001 C CNN
+F 3 "~" H 10290 3210 50  0001 C CNN
+F 4 "C14663" H 10290 3210 50  0001 C CNN "JLPCB Component"
+	1    10290 3210
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F848A75
+P 10090 3510
+AR Path="/5F848A75" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F848A75" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F848A75" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 10090 3260 50  0001 C CNN
+F 1 "GND" H 10095 3337 50  0000 C CNN
+F 2 "" H 10090 3510 50  0001 C CNN
+F 3 "" H 10090 3510 50  0001 C CNN
+	1    10090 3510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10290 2960 10290 3060
+Wire Wire Line
+	10290 3410 10290 3360
+Wire Wire Line
+	10090 3510 10090 3410
+Wire Wire Line
+	10090 3410 10290 3410
+Text GLabel 10440 2960 2    50   Input ~ 0
+PA0_Motor_Temp
+Wire Wire Line
+	10440 2960 10290 2960
+Connection ~ 10290 2960
+Text GLabel 9480 2960 0    50   Input ~ 0
+Motor_Temp+
+Wire Wire Line
+	10080 2960 10290 2960
+Wire Wire Line
+	9480 2960 9600 2960
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F8554AA
+P 9690 2490
+AR Path="/5F8554AA" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F8554AA" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 9690 2340 50  0001 C CNN
+F 1 "+3V3" H 9705 2663 50  0000 C CNN
+F 2 "" H 9690 2490 50  0001 C CNN
+F 3 "" H 9690 2490 50  0001 C CNN
+	1    9690 2490
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F855B07
+P 9600 3200
+AR Path="/5F855B07" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F855B07" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F855B07" Ref="C6"  Part="1" 
+F 0 "C6" H 9380 3200 50  0000 L CNN
+F 1 "100nF" H 9260 3110 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9638 3050 50  0001 C CNN
+F 3 "~" H 9600 3200 50  0001 C CNN
+F 4 "C14663" H 9600 3200 50  0001 C CNN "JLPCB Component"
+	1    9600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9690 2870 9690 2960
+Connection ~ 9690 2960
+Wire Wire Line
+	9690 2960 9780 2960
+Wire Wire Line
+	9600 3050 9600 2960
+Connection ~ 9600 2960
+Wire Wire Line
+	9600 2960 9690 2960
+Wire Wire Line
+	9600 3350 9600 3410
+Wire Wire Line
+	9600 3410 10090 3410
+Connection ~ 10090 3410
+Text GLabel 1680 6630 0    50   Input ~ 0
+PAS_HV_Con
+Text GLabel 3800 6640 0    50   Input ~ 0
+GP_Out_1_Prech_Con
+Text GLabel 3790 5640 0    50   Input ~ 0
+Brake_Vac_AC_Con
+Text GLabel 4700 3480 0    50   Input ~ 0
+PC3_Brake_Vac_Con
+Text GLabel 4860 4210 0    50   Input ~ 0
+PC4_GP_Out_1
+Text GLabel 4870 3840 0    50   Input ~ 0
+PC2_PAS_Con
+Text Notes 8420 1020 0    50   ~ 0
+Atmega
+Text Notes 8450 1870 0    50   ~ 0
+Atmega
+Wire Wire Line
+	9690 2570 9690 2490
+Text GLabel 1270 3860 0    50   Input ~ 0
+E_Stop_In
+$Comp
+L Device:R R?
+U 1 1 5F04A9F5
+P 2020 4110
+AR Path="/5F04A9F5" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F04A9F5" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F04A9F5" Ref="R112"  Part="1" 
+F 0 "R112" H 1950 4064 50  0000 R CNN
+F 1 "1.5k" H 1950 4155 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1950 4110 50  0001 C CNN
+F 3 "~" H 2020 4110 50  0001 C CNN
+F 4 "C22843" H 2020 4110 50  0001 C CNN "JLPCB Component"
+	1    2020 4110
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F04AA00
+P 1720 3860
+AR Path="/5F04AA00" Ref="R?"  Part="1" 
+AR Path="/5EDFAF50/5F04AA00" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5F04AA00" Ref="R111"  Part="1" 
+F 0 "R111" V 1620 3860 50  0000 C CNN
+F 1 "4.7k" V 1520 3860 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1650 3860 50  0001 C CNN
+F 3 "~" H 1720 3860 50  0001 C CNN
+F 4 "C23162" H 1720 3860 50  0001 C CNN "JLPCB Component"
+	1    1720 3860
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F04AA0B
+P 2420 4110
+AR Path="/5F04AA0B" Ref="C?"  Part="1" 
+AR Path="/5EDFAF50/5F04AA0B" Ref="C?"  Part="1" 
+AR Path="/5EFC5179/5F04AA0B" Ref="C68"  Part="1" 
+F 0 "C68" H 2535 4156 50  0000 L CNN
+F 1 "1uF" H 2535 4065 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2458 3960 50  0001 C CNN
+F 3 "~" H 2420 4110 50  0001 C CNN
+F 4 "C15849" H 2420 4110 50  0001 C CNN "JLPCB Component"
+	1    2420 4110
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F04AA15
+P 2220 4410
+AR Path="/5F04AA15" Ref="#PWR?"  Part="1" 
+AR Path="/5EDFAF50/5F04AA15" Ref="#PWR?"  Part="1" 
+AR Path="/5EFC5179/5F04AA15" Ref="#PWR088"  Part="1" 
+F 0 "#PWR088" H 2220 4160 50  0001 C CNN
+F 1 "GND" H 2225 4237 50  0000 C CNN
+F 2 "" H 2220 4410 50  0001 C CNN
+F 3 "" H 2220 4410 50  0001 C CNN
+	1    2220 4410
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1870 3860 2020 3860
+Wire Wire Line
+	2420 3860 2420 3960
+Wire Wire Line
+	2020 3960 2020 3860
+Connection ~ 2020 3860
+Wire Wire Line
+	2020 3860 2420 3860
+Wire Wire Line
+	2020 4260 2020 4310
+Wire Wire Line
+	2020 4310 2220 4310
+Wire Wire Line
+	2420 4310 2420 4260
+Wire Wire Line
+	2220 4410 2220 4310
+Connection ~ 2220 4310
+Wire Wire Line
+	2220 4310 2420 4310
+Wire Wire Line
+	2570 3860 2420 3860
+Connection ~ 2420 3860
+Wire Wire Line
+	1270 3860 1570 3860
+Text GLabel 2570 3860 2    50   Input ~ 0
+PB1_E_Stop_In
+Text GLabel 5460 2130 2    50   Input ~ 0
+PB3_GP_In_1
+Text GLabel 4700 4030 0    50   Input ~ 0
+AC_PRECH_CTRL_PD7
+Text GLabel 4710 3660 0    50   Input ~ 0
+HV_CON_CTRL_PD6
+Text GLabel 4700 3300 0    50   Input ~ 0
+AC_CON_CTRL_PD5
+$Comp
+L Device:R R?
+U 1 1 5FAAAFB5
+P 5030 3660
+AR Path="/5EDFAF50/5FAAAFB5" Ref="R?"  Part="1" 
+AR Path="/5F8738CC/5FAAAFB5" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5FAAAFB5" Ref="R124"  Part="1" 
+F 0 "R124" V 4940 3540 50  0000 L CNN
+F 1 "NF" V 4940 3760 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4960 3660 50  0001 C CNN
+F 3 "~" H 5030 3660 50  0001 C CNN
+F 4 "" H 5030 3660 50  0001 C CNN "JLPCB Component"
+	1    5030 3660
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FAC8248
+P 5020 3840
+AR Path="/5EDFAF50/5FAC8248" Ref="R?"  Part="1" 
+AR Path="/5F8738CC/5FAC8248" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5FAC8248" Ref="R121"  Part="1" 
+F 0 "R121" V 4930 3720 50  0000 L CNN
+F 1 "0R" V 4930 3930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4950 3840 50  0001 C CNN
+F 3 "~" H 5020 3840 50  0001 C CNN
+F 4 "C21189" H 5020 3840 50  0001 C CNN "JLPCB Component"
+	1    5020 3840
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FAD1D4C
+P 5020 4030
+AR Path="/5EDFAF50/5FAD1D4C" Ref="R?"  Part="1" 
+AR Path="/5F8738CC/5FAD1D4C" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5FAD1D4C" Ref="R122"  Part="1" 
+F 0 "R122" V 4930 3910 50  0000 L CNN
+F 1 "NF" V 4930 4130 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4950 4030 50  0001 C CNN
+F 3 "~" H 5020 4030 50  0001 C CNN
+F 4 "" H 5020 4030 50  0001 C CNN "JLPCB Component"
+	1    5020 4030
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FAD1D53
+P 5010 4210
+AR Path="/5EDFAF50/5FAD1D53" Ref="R?"  Part="1" 
+AR Path="/5F8738CC/5FAD1D53" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5FAD1D53" Ref="R12"  Part="1" 
+F 0 "R12" V 4920 4090 50  0000 L CNN
+F 1 "0R" V 5100 4130 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4940 4210 50  0001 C CNN
+F 3 "~" H 5010 4210 50  0001 C CNN
+F 4 "C21189" H 5010 4210 50  0001 C CNN "JLPCB Component"
+	1    5010 4210
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FADB7C3
+P 5030 3300
+AR Path="/5EDFAF50/5FADB7C3" Ref="R?"  Part="1" 
+AR Path="/5F8738CC/5FADB7C3" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5FADB7C3" Ref="R123"  Part="1" 
+F 0 "R123" V 4940 3180 50  0000 L CNN
+F 1 "NF" V 4940 3410 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4960 3300 50  0001 C CNN
+F 3 "~" H 5030 3300 50  0001 C CNN
+F 4 "" H 5030 3300 50  0001 C CNN "JLPCB Component"
+	1    5030 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FADB7CA
+P 5020 3480
+AR Path="/5EDFAF50/5FADB7CA" Ref="R?"  Part="1" 
+AR Path="/5F8738CC/5FADB7CA" Ref="R?"  Part="1" 
+AR Path="/5EFC5179/5FADB7CA" Ref="R17"  Part="1" 
+F 0 "R17" V 4930 3360 50  0000 L CNN
+F 1 "0R" V 4930 3560 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4950 3480 50  0001 C CNN
+F 3 "~" H 5020 3480 50  0001 C CNN
+F 4 "C21189" H 5020 3480 50  0001 C CNN "JLPCB Component"
+	1    5020 3480
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5180 3300 5230 3300
+Wire Wire Line
+	5230 3300 5230 3400
+Wire Wire Line
+	5230 3480 5170 3480
+Wire Wire Line
+	5180 3660 5230 3660
+Wire Wire Line
+	5230 3660 5230 3740
+Wire Wire Line
+	5230 3840 5170 3840
+Wire Wire Line
+	5170 4030 5220 4030
+Wire Wire Line
+	5220 4030 5220 4110
+Wire Wire Line
+	5220 4210 5160 4210
+Wire Wire Line
+	4880 3300 4700 3300
+Wire Wire Line
+	4880 3660 4710 3660
+Wire Wire Line
+	4870 4030 4700 4030
+Text GLabel 5340 3400 2    50   Input ~ 0
+B_Vac_AC_Con_Ctrl
+Text GLabel 3820 5950 0    50   Input ~ 0
+B_Vac_AC_Con_Ctrl
+Text GLabel 5350 3740 2    50   Input ~ 0
+PAS_HV_Con_Ctrl
+Text GLabel 1710 6940 0    50   Input ~ 0
+PAS_HV_Con_Ctrl
+Text GLabel 3830 6950 0    50   Input ~ 0
+GP_Out_1_Prech_Con_Ctrl
+Text GLabel 5360 4110 2    50   Input ~ 0
+GP_Out_1_Prech_Con_Ctrl
+Wire Wire Line
+	5340 3400 5230 3400
+Connection ~ 5230 3400
+Wire Wire Line
+	5230 3400 5230 3480
+Wire Wire Line
+	5350 3740 5230 3740
+Connection ~ 5230 3740
+Wire Wire Line
+	5230 3740 5230 3840
+Wire Wire Line
+	5360 4110 5220 4110
+Connection ~ 5220 4110
+Wire Wire Line
+	5220 4110 5220 4210
+Wire Wire Line
+	4870 3480 4700 3480
+$EndSCHEMATC
