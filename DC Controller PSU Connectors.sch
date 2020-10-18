@@ -790,4 +790,8 @@ F 9 "BM08B-CPTK-1A-TB" H 5100 3710 50  0001 L CNN "Manufacturer_Part_Number"
 	1    4350 4310
 	1    0    0    -1  
 $EndComp
+Text Notes 800  3950 0    197  ~ 0
+Need to sort this clusterfuck out
+Text Notes 3250 5450 0    197  ~ 0
+Footprint problem\n\nswap connections on connectors to maintain position
 $EndSCHEMATC
