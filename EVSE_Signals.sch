@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 5 8
 Title "DC Controller STM32"
-Date "2020-07-04"
-Rev "2"
+Date "2020-10-18"
+Rev "3"
 Comp ""
 Comment1 "Designed: A Martell"
 Comment2 "Based on designs by J Huebner and D Maguire"
@@ -440,12 +440,12 @@ Wire Wire Line
 	8470 1810 8470 1710
 Wire Wire Line
 	8470 1710 8670 1710
-Text GLabel 8820 1260 2    50   Input ~ 0
+Text GLabel 8810 3160 2    50   Input ~ 0
 PC0_MG2_IL1
 Wire Wire Line
 	8820 1260 8670 1260
 Connection ~ 8670 1260
-Text GLabel 7720 1260 0    50   Input ~ 0
+Text GLabel 7710 3160 0    50   Input ~ 0
 MG2_IL1_In
 Wire Wire Line
 	7720 1260 7820 1260
@@ -532,12 +532,12 @@ Wire Wire Line
 	8470 2760 8470 2660
 Wire Wire Line
 	8470 2660 8670 2660
-Text GLabel 8820 2210 2    50   Input ~ 0
+Text GLabel 8810 4110 2    50   Input ~ 0
 PC1_MG2_IL2
 Wire Wire Line
 	8820 2210 8670 2210
 Connection ~ 8670 2210
-Text GLabel 7720 2210 0    50   Input ~ 0
+Text GLabel 7710 4110 0    50   Input ~ 0
 MG2_IL2_In
 Wire Wire Line
 	7720 2210 7820 2210
@@ -624,12 +624,12 @@ Wire Wire Line
 	8460 3710 8460 3610
 Wire Wire Line
 	8460 3610 8660 3610
-Text GLabel 8810 3160 2    50   Input ~ 0
+Text GLabel 8820 1260 2    50   Input ~ 0
 MG1_I1
 Wire Wire Line
 	8810 3160 8660 3160
 Connection ~ 8660 3160
-Text GLabel 7710 3160 0    50   Input ~ 0
+Text GLabel 7720 1260 0    50   Input ~ 0
 MG1_IL1_In
 Wire Wire Line
 	7710 3160 7810 3160
@@ -716,12 +716,12 @@ Wire Wire Line
 	8460 4660 8460 4560
 Wire Wire Line
 	8460 4560 8660 4560
-Text GLabel 8810 4110 2    50   Input ~ 0
+Text GLabel 8820 2210 2    50   Input ~ 0
 MG1_I2
 Wire Wire Line
 	8810 4110 8660 4110
 Connection ~ 8660 4110
-Text GLabel 7710 4110 0    50   Input ~ 0
+Text GLabel 7720 2210 0    50   Input ~ 0
 MG1_IL2_In
 Wire Wire Line
 	7710 4110 7810 4110

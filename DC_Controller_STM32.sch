@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
 Title "DC Controller STM32"
-Date "2020-07-04"
-Rev "2"
+Date "2020-10-18"
+Rev "3"
 Comp ""
 Comment1 "Designed: A Martell"
 Comment2 "Based on designs by J Huebner and D Maguire"

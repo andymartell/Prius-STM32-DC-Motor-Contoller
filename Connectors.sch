@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 8
 Title "DC Controller STM32"
-Date "2020-07-04"
-Rev "2"
+Date "2020-10-18"
+Rev "3"
 Comp ""
 Comment1 "Designed: A Martell"
 Comment2 "Based on designs by J Huebner and D Maguire"
@@ -467,18 +467,18 @@ NoConn ~ 4030 6310
 $Comp
 L SamacSys_Parts:SM08B-CPTK-1A-TBL J7
 U 1 1 5F32A5F1
-P 3060 4870
-F 0 "J7" H 3510 5135 50  0000 C CNN
-F 1 "SM08B-CPTK-1A-TB" H 3510 5044 50  0000 C CNN
-F 2 "SamacSys_Parts:SM08BCPTK1ATBL" H 3810 4970 50  0001 L CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eCPT.pdf" H 3810 4870 50  0001 L CNN
-F 4 "Header Top 8 Double CPT" H 3810 4770 50  0001 L CNN "Description"
-F 5 "12" H 3810 4670 50  0001 L CNN "Height"
-F 6 "" H 3810 4570 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 3810 4470 50  0001 L CNN "Mouser Price/Stock"
-F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 3810 4370 50  0001 L CNN "Manufacturer_Name"
-F 9 "SM08B-CPTK-1A-TB" H 3810 4270 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3060 4870
+P 5010 4790
+F 0 "J7" H 5460 5055 50  0000 C CNN
+F 1 "SM08B-CPTK-1A-TB" H 5460 4964 50  0000 C CNN
+F 2 "SamacSys_Parts:SM08BCPTK1ATBL_odd_even" H 5760 4890 50  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eCPT.pdf" H 5760 4790 50  0001 L CNN
+F 4 "Header Top 8 Double CPT" H 5760 4690 50  0001 L CNN "Description"
+F 5 "12" H 5760 4590 50  0001 L CNN "Height"
+F 6 "" H 5760 4490 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 5760 4390 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 5760 4290 50  0001 L CNN "Manufacturer_Name"
+F 9 "SM08B-CPTK-1A-TB" H 5760 4190 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5010 4790
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -544,13 +544,13 @@ Wire Wire Line
 	2920 6990 2920 6880
 Text GLabel 2250 6890 2    50   Input ~ 0
 Coolant_Temp
-NoConn ~ 2160 4670
-NoConn ~ 3060 4870
-NoConn ~ 3060 4770
-NoConn ~ 2160 4870
-NoConn ~ 2160 4770
-NoConn ~ 4350 4810
-Text Notes 3360 5250 0    50   ~ 0
+NoConn ~ 4110 4590
+NoConn ~ 5010 4790
+NoConn ~ 5010 4690
+NoConn ~ 4110 4790
+NoConn ~ 4110 4690
+NoConn ~ 2050 4590
+Text Notes 2000 5210 0    50   ~ 0
 Current Sensor Connectors
 $Comp
 L SamacSys_Parts:BM50B-SHLDS-G-TFT J6
@@ -601,94 +601,94 @@ F 9 "BM02B-CPTK-1A-TB" H 3010 5450 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Text GLabel 2250 2730 0    50   Input ~ 0
 CHG_CANL
-Text Notes 4700 5040 0    50   ~ 0
+Text Notes 2400 4820 0    50   ~ 0
 MG1
-Text Notes 2520 5320 0    50   ~ 0
+Text Notes 4470 5240 0    50   ~ 0
 MG2
-Text GLabel 2160 4170 0    50   Input ~ 0
+Text GLabel 2050 4090 0    50   Input ~ 0
 MG1_IL1_In
-Text GLabel 2160 4270 0    50   Input ~ 0
+Text GLabel 2050 4190 0    50   Input ~ 0
 MG1_IL2_In
 $Comp
 L power:+5V #PWR?
 U 1 1 5F14A7F7
-P 1590 4240
+P 3540 4160
 AR Path="/5F14A7F7" Ref="#PWR?"  Part="1" 
 AR Path="/5EDFAF50/5F14A7F7" Ref="#PWR083"  Part="1" 
-F 0 "#PWR083" H 1590 4090 50  0001 C CNN
-F 1 "+5V" H 1605 4413 50  0000 C CNN
-F 2 "" H 1590 4240 50  0001 C CNN
-F 3 "" H 1590 4240 50  0001 C CNN
-	1    1590 4240
+F 0 "#PWR083" H 3540 4010 50  0001 C CNN
+F 1 "+5V" H 3555 4333 50  0000 C CNN
+F 2 "" H 3540 4160 50  0001 C CNN
+F 3 "" H 3540 4160 50  0001 C CNN
+	1    3540 4160
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-5V #PWR?
 U 1 1 5F14DDA6
-P 1410 4260
+P 3360 4180
 AR Path="/5F8738CC/5F14DDA6" Ref="#PWR?"  Part="1" 
 AR Path="/5EDFAF50/5F14DDA6" Ref="#PWR082"  Part="1" 
-F 0 "#PWR082" H 1410 4360 50  0001 C CNN
-F 1 "-5V" H 1425 4433 50  0000 C CNN
-F 2 "" H 1410 4260 50  0001 C CNN
-F 3 "" H 1410 4260 50  0001 C CNN
-	1    1410 4260
+F 0 "#PWR082" H 3360 4280 50  0001 C CNN
+F 1 "-5V" H 3375 4353 50  0000 C CNN
+F 2 "" H 3360 4180 50  0001 C CNN
+F 3 "" H 3360 4180 50  0001 C CNN
+	1    3360 4180
 	1    0    0    -1  
 $EndComp
-Text GLabel 1980 4570 0    50   Input ~ 0
+Text GLabel 3930 4490 0    50   Input ~ 0
 Vcc_26V
 Wire Wire Line
-	1980 4570 2160 4570
+	3930 4490 4110 4490
 Wire Wire Line
-	2160 4370 1590 4370
+	4110 4290 3540 4290
 Wire Wire Line
-	1590 4240 1590 4370
+	3540 4160 3540 4290
 Wire Wire Line
-	2160 4470 1410 4470
+	4110 4390 3360 4390
 Wire Wire Line
-	1410 4260 1410 4470
-Text GLabel 4350 4310 0    50   Input ~ 0
+	3360 4180 3360 4390
+Text GLabel 4110 4090 0    50   Input ~ 0
 MG2_IL1_In
-Text GLabel 4350 4410 0    50   Input ~ 0
+Text GLabel 4110 4190 0    50   Input ~ 0
 MG2_IL2_In
 $Comp
 L power:+5V #PWR?
 U 1 1 5F15B77F
-P 3780 4380
+P 1480 4160
 AR Path="/5F15B77F" Ref="#PWR?"  Part="1" 
 AR Path="/5EDFAF50/5F15B77F" Ref="#PWR085"  Part="1" 
-F 0 "#PWR085" H 3780 4230 50  0001 C CNN
-F 1 "+5V" H 3795 4553 50  0000 C CNN
-F 2 "" H 3780 4380 50  0001 C CNN
-F 3 "" H 3780 4380 50  0001 C CNN
-	1    3780 4380
+F 0 "#PWR085" H 1480 4010 50  0001 C CNN
+F 1 "+5V" H 1495 4333 50  0000 C CNN
+F 2 "" H 1480 4160 50  0001 C CNN
+F 3 "" H 1480 4160 50  0001 C CNN
+	1    1480 4160
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-5V #PWR?
 U 1 1 5F15B789
-P 3600 4400
+P 1300 4180
 AR Path="/5F8738CC/5F15B789" Ref="#PWR?"  Part="1" 
 AR Path="/5EDFAF50/5F15B789" Ref="#PWR084"  Part="1" 
-F 0 "#PWR084" H 3600 4500 50  0001 C CNN
-F 1 "-5V" H 3615 4573 50  0000 C CNN
-F 2 "" H 3600 4400 50  0001 C CNN
-F 3 "" H 3600 4400 50  0001 C CNN
-	1    3600 4400
+F 0 "#PWR084" H 1300 4280 50  0001 C CNN
+F 1 "-5V" H 1315 4353 50  0000 C CNN
+F 2 "" H 1300 4180 50  0001 C CNN
+F 3 "" H 1300 4180 50  0001 C CNN
+	1    1300 4180
 	1    0    0    -1  
 $EndComp
-Text GLabel 4170 4710 0    50   Input ~ 0
+Text GLabel 1870 4490 0    50   Input ~ 0
 Vcc_26V
 Wire Wire Line
-	4170 4710 4350 4710
+	1870 4490 2050 4490
 Wire Wire Line
-	4350 4510 3780 4510
+	2050 4290 1480 4290
 Wire Wire Line
-	3780 4380 3780 4510
+	1480 4160 1480 4290
 Wire Wire Line
-	4350 4610 3600 4610
+	2050 4390 1300 4390
 Wire Wire Line
-	3600 4400 3600 4610
+	1300 4180 1300 4390
 Text GLabel 2750 1430 2    50   Input ~ 0
 E_Stop_In
 NoConn ~ 2250 2930
@@ -767,31 +767,27 @@ Text GLabel 2750 2930 2    50   Input ~ 0
 EVSE_SW
 Text GLabel 2750 2830 2    50   Input ~ 0
 Control_Pilot
-NoConn ~ 5250 4510
-NoConn ~ 5250 4610
-NoConn ~ 5250 4710
-NoConn ~ 5250 4810
-NoConn ~ 5250 4410
-NoConn ~ 5250 4310
+NoConn ~ 2950 4290
+NoConn ~ 2950 4390
+NoConn ~ 2950 4490
+NoConn ~ 2950 4590
+NoConn ~ 2950 4190
+NoConn ~ 2950 4090
 $Comp
 L SamacSys_Parts:BM08B-CPTK-1A-TB J8
 U 1 1 5F32A8B6
-P 4350 4310
-F 0 "J8" H 4800 4575 50  0000 C CNN
-F 1 "BM08B-CPTK-1A-TB" H 4800 4484 50  0000 C CNN
-F 2 "SamacSys_Parts:BM08BCPTK1ATB" H 5100 4410 50  0001 L CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eCPT.pdf" H 5100 4310 50  0001 L CNN
-F 4 "Header Top 8 Double CPT" H 5100 4210 50  0001 L CNN "Description"
-F 5 "12" H 5100 4110 50  0001 L CNN "Height"
-F 6 "306-BM08B-CPTK-1A-TB" H 5100 4010 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/JST-Automotive/BM08B-CPTK-1A-TB?qs=XoGB3caz5%2FYvSzPNYjsAKw%3D%3D" H 5100 3910 50  0001 L CNN "Mouser Price/Stock"
-F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 5100 3810 50  0001 L CNN "Manufacturer_Name"
-F 9 "BM08B-CPTK-1A-TB" H 5100 3710 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4350 4310
+P 2050 4090
+F 0 "J8" H 2500 4355 50  0000 C CNN
+F 1 "BM08B-CPTK-1A-TB" H 2500 4264 50  0000 C CNN
+F 2 "SamacSys_Parts:BM08BCPTK1ATB" H 2800 4190 50  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eCPT.pdf" H 2800 4090 50  0001 L CNN
+F 4 "Header Top 8 Double CPT" H 2800 3990 50  0001 L CNN "Description"
+F 5 "12" H 2800 3890 50  0001 L CNN "Height"
+F 6 "306-BM08B-CPTK-1A-TB" H 2800 3790 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/JST-Automotive/BM08B-CPTK-1A-TB?qs=XoGB3caz5%2FYvSzPNYjsAKw%3D%3D" H 2800 3690 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 2800 3590 50  0001 L CNN "Manufacturer_Name"
+F 9 "BM08B-CPTK-1A-TB" H 2800 3490 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2050 4090
 	1    0    0    -1  
 $EndComp
-Text Notes 800  3950 0    197  ~ 0
-Need to sort this clusterfuck out
-Text Notes 3250 5450 0    197  ~ 0
-Footprint problem\n\nswap connections on connectors to maintain position
 $EndSCHEMATC
