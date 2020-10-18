@@ -741,24 +741,6 @@ Wire Wire Line
 Wire Wire Line
 	5460 800  5560 800 
 Connection ~ 5560 800 
-$Sheet
-S 980  5170 1360 680 
-U 5EDFAF50
-F0 "Connectors" 50
-F1 "DC Controller PSU Connectors.sch" 50
-$EndSheet
-$Sheet
-S 980  6090 1360 660 
-U 5EFC5179
-F0 "IO" 50
-F1 "DC Controller IO.sch" 50
-$EndSheet
-$Sheet
-S 980  7000 1360 650 
-U 5EFC5780
-F0 "Motor Drive" 50
-F1 "DC Controller Motor Drive.sch" 50
-$EndSheet
 Text GLabel 10350 3370 2    50   Input ~ 0
 CAN1H
 Text GLabel 10350 3470 2    50   Input ~ 0
@@ -1169,4 +1151,22 @@ Wire Wire Line
 Connection ~ 7550 1450
 Wire Wire Line
 	7550 1450 7550 1510
+$Sheet
+S 980  5170 1360 680 
+U 5EDFAF50
+F0 "Connectors" 50
+F1 "Connectors.sch" 50
+$EndSheet
+$Sheet
+S 980  6090 1360 660 
+U 5EFC5179
+F0 "IO" 50
+F1 "IO.sch" 50
+$EndSheet
+$Sheet
+S 980  7000 1360 650 
+U 5EFC5780
+F0 "Motor Drive" 50
+F1 "Motor_Drive.sch" 50
+$EndSheet
 $EndSCHEMATC
